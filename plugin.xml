@@ -42,6 +42,15 @@
                style="push"
                tooltip="Tokenize All Files">
          </action>
+         <action
+               class="codewalker.actions.AnalyzeIdentifiersAction"
+               icon="icons/sample.gif"
+               id="codewalker.actions.AnalyzeIdentifiersAction"
+               label="&amp;Analyze Identifiers"
+               menubarPath="codeWalker/printActions"
+               style="push"
+               tooltip="Analyze Identifiers">
+         </action>
       </actionSet>
    </extension>
 

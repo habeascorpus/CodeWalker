@@ -28,4 +28,7 @@ public class ConfigurationSettings {
     
     public static final File tokenDirectory =
 	new File("/home/pschulam/data/habeascorpus-tokens/");
+    
+    public static final File identifierDirectory =
+	new File("/home/pschulam/data/habeascorpus-identifiers");
 }
