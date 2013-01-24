@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="CodeWalker"
+            visible="true"
+            id="CodeWalker.actionSet">
+         <menu
+               label="CodeWalker"
+               id="codeWalker">
+            <separator
+                  name="printActions">
+            </separator>
+         </menu>
+         <action
+               label="&amp;Print Packages"
+               icon="icons/sample.gif"
+               class="codewalker.actions.SampleAction"
+               tooltip="Print Projects"
+               menubarPath="codeWalker/printActions"
+               toolbarPath="CodeWalker"
+               id="codewalker.actions.SampleAction">
+         </action>
+         <action
+               class="codewalker.actions.GenerateFileListAction"
+               icon="icons/sample.gif"
+               id="codewalker.actions.GenerateFileListAction"
+               label="&amp;Generate File List"
+               menubarPath="codeWalker/printActions"
+               style="push"
+               tooltip="Generate File List">
+         </action>
+         <action
+               class="codewalker.actions.TokenizeAllFilesAction"
+               icon="icons/sample.gif"
+               id="codewalker.actions.TokenizeAllFilesAction"
+               label="&amp;Tokenize All Files"
+               menubarPath="codeWalker/printActions"
+               style="push"
+               tooltip="Tokenize All Files">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CodeWalker
+Bundle-SymbolicName: CodeWalker; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: codewalker.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.7.101",
+ org.eclipse.jdt;bundle-version="3.7.2",
+ org.eclipse.jdt.core;bundle-version="3.7.3",
+ org.eclipse.jdt.ui;bundle-version="3.7.2",
+ org.eclipse.jface.text;bundle-version="3.7.2"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
