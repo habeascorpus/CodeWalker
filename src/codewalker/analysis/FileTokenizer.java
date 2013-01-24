@@ -36,11 +36,13 @@ public class FileTokenizer {
 	IScanner scanner = ToolFactory.createScanner(false, false, false, false);
 	scanner.setSource(rawSource.toCharArray());
 	
+	int token;
 	List<String> tokens = new ArrayList<String>();
-	while (scanner.getNextToken() != ITerminalSymbols.TokenNameEOF)
+	while ((token = scanner.getNextToken()) != ITerminalSymbols.TokenNameEOF)
 	{
 	    char[] tokenSource = scanner.getCurrentTokenSource();
-	    tokens.add(new String(tokenSource));
+	    String strToken = (new String(tokenSource)) + '\t' + TerminalSymbolConverter.convertToString(token);
+	    tokens.add(strToken);
 	}
 	return tokens.toArray(new String[0]);
     }
