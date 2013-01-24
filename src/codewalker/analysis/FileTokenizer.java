@@ -33,7 +33,7 @@ public class FileTokenizer {
     public String[] tokenize() throws JavaModelException, InvalidInputException
     {
 	String rawSource = this.cu.getSource();
-	IScanner scanner = ToolFactory.createScanner(false, false, false, false);
+	IScanner scanner = ToolFactory.createScanner(false, false, false, "1.5");
 	scanner.setSource(rawSource.toCharArray());
 	
 	int token;
