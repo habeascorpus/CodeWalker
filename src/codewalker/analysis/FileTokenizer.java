@@ -41,8 +41,9 @@ public class FileTokenizer {
 	while ((token = scanner.getNextToken()) != ITerminalSymbols.TokenNameEOF)
 	{
 	    char[] tokenSource = scanner.getCurrentTokenSource();
-	    String strToken = (new String(tokenSource)) + '\t' + TerminalSymbolConverter.convertToString(token);
-	    tokens.add(strToken);
+	    String tokenStr = (new String(tokenSource)).replace('\n', ' ').replace('\t', ' ');
+	    String tokenInfo = tokenStr + '\t' + TerminalSymbolConverter.convertToString(token);
+	    tokens.add(tokenInfo);
 	}
 	return tokens.toArray(new String[0]);
     }

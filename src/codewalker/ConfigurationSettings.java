@@ -24,11 +24,11 @@ public class ConfigurationSettings {
 	};
     
     public static final File fileList =
-	new File("/home/pschulam/data/habeascorpus-workspace/filelist.txt");
+	new File("/home/pschulam/data/habeascorpus/habeascorpus_workspace/filelist.txt");
     
     public static final File tokenDirectory =
-	new File("/home/pschulam/data/habeascorpus-tokens/");
+	new File("/home/pschulam/data/habeascorpus/habeascorpus_tokens/");
     
     public static final File identifierDirectory =
-	new File("/home/pschulam/data/habeascorpus-identifiers");
+	new File("/home/pschulam/data/habeascorpus/habeascorpus_identifiers");
 }
