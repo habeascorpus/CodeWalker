@@ -31,4 +31,7 @@ public class ConfigurationSettings {
     
     public static final File identifierDirectory =
 	new File("/home/pschulam/data/habeascorpus/habeascorpus_identifiers");
+    
+    public static final File invocationDirectory =
+	new File("/home/pschulam/data/habeascorpus/habeascorpus_invocations");
 }

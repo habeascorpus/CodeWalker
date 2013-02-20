@@ -51,6 +51,15 @@
                style="push"
                tooltip="Analyze Identifiers">
          </action>
+         <action
+               class="codewalker.actions.GetMethodInvocationsAction"
+               icon="icons/sample.gif"
+               id="codewalker.actions.GetMethodInvocationsAction"
+               label="&amp;Get Method Invocations"
+               menubarPath="codeWalker/"
+               style="push"
+               tooltip="Get Method Invocations">
+         </action>
       </actionSet>
    </extension>
 
