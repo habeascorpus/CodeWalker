@@ -34,4 +34,7 @@ public class ConfigurationSettings {
     
     public static final File invocationDirectory =
 	new File("/home/pschulam/data/habeascorpus/habeascorpus_invocations");
+    
+    public static final File productionsDirectory =
+	new File("/home/pschulam/data/habeascorpus/habeascorpus_productions");
 }

@@ -60,6 +60,15 @@
                style="push"
                tooltip="Get Method Invocations">
          </action>
+         <action
+               class="codewalker.actions.CountGrammarProductionsAction"
+               icon="icons/sample.gif"
+               id="codewalker.actions.CountGrammarProductions"
+               label="&amp;Count Productions"
+               menubarPath="codeWalker/"
+               style="push"
+               tooltip="Count productions used in AST">
+         </action>
       </actionSet>
    </extension>
 
